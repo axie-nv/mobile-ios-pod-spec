@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
     s.swift_version = "4.2"
     s.ios.deployment_target  = '9.0'
 
+    s.dependency 'AWSLex'
     s.dependency 'NVFoundation', '0.5.3'
 
 end
