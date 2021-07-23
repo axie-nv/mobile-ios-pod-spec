@@ -21,6 +21,5 @@ Pod::Spec.new do |s|
     s.ios.deployment_target  = '9.0'
 
     s.dependency 'AWSLex'
-    s.dependency 'NativeVoiceAlexaSDK', '~> 0.6.0'
 
 end
