@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
     s.source_files = "SpotifyiOS.framework/Headers/*.h"
     s.vendored_frameworks = "SpotifyiOS.framework"
     s.platform = :ios
-    s.swift_version = "4.2"
-    s.ios.deployment_target  = '9.0'
+    s.swift_version = "4.4"
+    s.ios.deployment_target  = '13.0'
 end
