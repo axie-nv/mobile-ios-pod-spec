@@ -17,21 +17,9 @@ Pod::Spec.new do |s|
     s.source_files = "NativeVoiceCoreSDK.framework/Headers/*.h"
     s.vendored_frameworks = "NativeVoiceCoreSDK.framework"
     s.platform = :ios
-    s.swift_version = '5.0'
-    s.ios.deployment_target  = '13.0'
-    
-    s.dependency 'Amplify'
+    s.swift_version = "4.2"
+    s.ios.deployment_target  = '9.0'
+
     s.dependency 'AWSLex'
-    s.dependency 'NativeVoiceAlexaSDK', '0.6.0.10'
-    s.dependency 'AmplifyPlugins/AWSCognitoAuthPlugin'
-    s.dependency 'AmplifyPlugins/AWSAPIPlugin'
-    s.dependency 'AmplifyPlugins/AWSPinpointAnalyticsPlugin'
-    s.dependency 'AWSMobileClient'
-    s.dependency 'GoogleSignIn', '5.0.2'
-    s.dependency 'gRPC-Swift', '1.0.0-alpha.12'
-    s.dependency 'CocoaLumberjack/Swift'
-    s.dependency 'LoginWithAmazon', '1.0.0'
-    s.dependency 'ReachabilitySwift'
-    s.dependency 'SwiftLint'
-    s.dependency 'SpotifyiOS', '1.0.0'
+    s.dependency 'NativeVoiceAlexaSDK', '0.6.0.6'
 end
