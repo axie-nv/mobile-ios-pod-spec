@@ -34,5 +34,4 @@ Pod::Spec.new do |s|
     s.dependency 'ReachabilitySwift'
     s.dependency 'SwiftLint'
     s.dependency 'SpotifyiOS', '1.0.0'
-    s.dependency 'opus-ios'
 end
