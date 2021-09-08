@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.public_header_files = "GStreamer.framework/Headers/*.h"
     s.source_files = "GStreamer.framework/Headers/*.h"
     s.vendored_frameworks = "GStreamer.framework"
-    s.exclude_files = 'GStreamer.framework/Headers/zlib.h'
+    s.private_header_files = 'GStreamer.framework/Headers/zlib.h'
     s.platform = :ios
     s.swift_version = "4.2"
     s.ios.deployment_target  = '9.0'
