@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     
     s.dependency 'Amplify'
     s.dependency 'AWSLex'
-    s.dependency 'NativeVoiceAlexaSDK', '0.6.0.13'
+    s.dependency 'NativeVoiceAlexaSDK', '~> 0.6.0.17'
     s.dependency 'AmplifyPlugins/AWSCognitoAuthPlugin'
     s.dependency 'AmplifyPlugins/AWSAPIPlugin'
     s.dependency 'AmplifyPlugins/AWSPinpointAnalyticsPlugin'
