@@ -37,6 +37,4 @@ Pod::Spec.new do |s|
     s.dependency 'SpotifyiOS', '1.0.0'
     s.dependency 'opus-ios'
     s.dependency 'SwCrypt'
-    s.dependency 'VoiceActivityDetector'
-    s.dependency 'TPCircularBuffer'
 end
