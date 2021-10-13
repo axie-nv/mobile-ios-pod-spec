@@ -21,8 +21,12 @@ Pod::Spec.new do |s|
     s.swift_version = '5.0'
     s.ios.deployment_target  = '13.0'
     
+    s.dependency 'Amplify'
     s.dependency 'AWSLex'
     s.dependency 'NativeVoiceAlexaSDK', '~> 0.6.0.17'
+    s.dependency 'AmplifyPlugins/AWSCognitoAuthPlugin'
+    s.dependency 'AmplifyPlugins/AWSAPIPlugin'
+    s.dependency 'AmplifyPlugins/AWSPinpointAnalyticsPlugin'
     s.dependency 'AWSMobileClient'
     s.dependency 'GoogleSignIn', '5.0.2'
     s.dependency 'gRPC-Swift', '1.0.0-alpha.12'
@@ -33,4 +37,6 @@ Pod::Spec.new do |s|
     s.dependency 'SpotifyiOS', '1.0.0'
     s.dependency 'opus-ios'
     s.dependency 'SwCrypt'
+    s.dependency 'VoiceActivityDetector'
+    s.dependency 'TPCircularBuffer'
 end
