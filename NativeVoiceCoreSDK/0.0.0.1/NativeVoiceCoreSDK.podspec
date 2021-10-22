@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     s.dependency 'NativeVoiceAlexaSDK', '~> 0.6.0.17'
     s.dependency 'AWSMobileClient'
     s.dependency 'GoogleSignIn', '5.0.2'
-    s.dependency 'gRPC-Swift'
+    s.dependency 'gRPC-Swift', '1.0.0-alpha.12'
     s.dependency 'CocoaLumberjack/Swift'
     s.dependency 'LoginWithAmazon', '1.0.0'
     s.dependency 'ReachabilitySwift'
