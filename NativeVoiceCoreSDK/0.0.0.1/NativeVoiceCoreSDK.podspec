@@ -20,12 +20,13 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.swift_version = '5.0'
     s.ios.deployment_target  = '13.0'
+        
+    s.frameworks = 'Accelerate', 'AssetsLibrary', 'VideoToolbox', 'CoreLocation'
+    s.libraries = 'resolv', 'iconv', 'c++'
     
     s.dependency 'AWSLex'
     s.dependency 'NativeVoiceAlexaSDK', '~> 0.6.0.17'
     s.dependency 'AWSMobileClient'
-    s.dependency 'GoogleSignIn', '5.0.2'
-    s.dependency 'gRPC-Swift', '1.0.0-alpha.12'
     s.dependency 'CocoaLumberjack/Swift'
     s.dependency 'LoginWithAmazon', '1.0.0'
     s.dependency 'ReachabilitySwift'
