@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/NativeVoiceCoreSDK/0.0.0.1/NativeVoiceCoreSDK.framework.zip" }
     s.public_header_files = "NativeVoiceCoreSDK.framework/Headers/*.h"
     s.source_files = "NativeVoiceCoreSDK.framework/Headers/*.h"
-    s.resources = "NativeVoiceCoreSDK.framework/**/*.{mp3,wav,snsr}"
+    s.resources = "NativeVoiceCoreSDK.framework/**/*.{mp3,wav,snsr}", "nvsdk/BLE/*.plist"
     s.vendored_frameworks = "NativeVoiceCoreSDK.framework"
     s.platform = :ios
     s.swift_version = '5.0'
