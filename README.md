@@ -1,1 +1,1 @@
-# mobile-ios-pod-spec
+# mobile-ios-pod-specs
