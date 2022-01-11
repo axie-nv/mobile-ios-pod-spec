@@ -15,17 +15,18 @@ Pod::Spec.new do |s|
     s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/NativeVoiceCoreSDK/0.0.0.1/NativeVoiceCoreSDK.framework.zip" }
     s.public_header_files = "NativeVoiceCoreSDK.framework/Headers/*.h"
     s.source_files = "NativeVoiceCoreSDK.framework/Headers/*.h"
-    s.resources = "NativeVoiceCoreSDK.framework/**/*.{mp3,wav,snsr}"
+    s.resources = "NativeVoiceCoreSDK.framework/**/*.{mp3,wav,snsr}", "nvsdk/BLE/*.plist"
     s.vendored_frameworks = "NativeVoiceCoreSDK.framework"
     s.platform = :ios
     s.swift_version = '5.0'
     s.ios.deployment_target  = '13.0'
+        
+    s.frameworks = 'Accelerate', 'AssetsLibrary', 'VideoToolbox', 'CoreLocation'
+    s.libraries = 'resolv', 'iconv', 'c++'
     
     s.dependency 'AWSLex'
     s.dependency 'NativeVoiceAlexaSDK', '~> 0.6.0.17'
     s.dependency 'AWSMobileClient'
-    s.dependency 'GoogleSignIn', '5.0.2'
-    s.dependency 'gRPC-Swift', '1.0.0-alpha.12'
     s.dependency 'CocoaLumberjack/Swift'
     s.dependency 'LoginWithAmazon', '1.0.0'
     s.dependency 'ReachabilitySwift'
