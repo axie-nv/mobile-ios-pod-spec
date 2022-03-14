@@ -16,6 +16,5 @@ Pod::Spec.new do |s|
     s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/NativeVoiceUIComponents/0.0.0.4/TapToTalk.xcframework.zip" }
     s.subspec 'TapToTalk' do |tapToTalk|
         tapToTalk.vendored_frameworks = "TapToTalk.xcframework"
-        tapToTalk.source_files = 'TapToTalk.xcframework/**/*.{swift,h}'
     end
 end
