@@ -14,7 +14,10 @@ Pod::Spec.new do |s|
     s.author          = { "$(git config user.name)" => "$(git config user.email)" }
     s.platform = :ios
     s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/NativeVoiceUIComponents/0.0.0.4/TapToTalk.xcframework.zip" }
+    
     s.subspec 'TapToTalk' do |tapToTalk|
-        tapToTalk.vendored_frameworks = "TapToTalk.xcframework"
+      tapToTalk.public_header_files = "TapToTalk.xcframework/**/*.h"
+      tapToTalk.source_files = 'TapToTalk.xcframework/**/*.h'
+      tapToTalk.vendored_frameworks = "TapToTalk.xcframework"
     end
 end
