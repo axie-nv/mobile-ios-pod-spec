@@ -17,4 +17,7 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.swift_version = '5.0'
     s.ios.deployment_target  = '13.6'
+    s.dependency 'NativeVoiceUIComponentTapToTalk'
+    s.dependency 'NativeVoiceUIComponentMicrophone'
+
 end
