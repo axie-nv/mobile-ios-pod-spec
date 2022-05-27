@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
     s.ios.deployment_target  = '13.6'
     s.dependency 'NativeVoiceUIComponentTapToTalk'
     s.dependency 'NativeVoiceUIComponentMicrophone'
-
+    s.dependency 'NativeVoiceUIComponentConversation'
 end
