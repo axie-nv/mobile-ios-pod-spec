@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
                   LICENSE
                 }
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/AvsDeviceSDK/0.0.0.1/AvsDeviceSDK.framework.zip" }
-    s.public_header_files = "AvsDeviceSDK.framework/Headers/*.h"
-    s.source_files = "AvsDeviceSDK.framework/Headers/*.h"
-    s.vendored_frameworks = "AvsDeviceSDK.framework"
+    s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/AvsDeviceSDK/0.0.0.1/AvsDeviceSDK.xcframework.zip" }
+    s.vendored_frameworks = "AvsDeviceSDK.xcframework"
     s.platform = :ios
     s.swift_version = "4.2"
     s.ios.deployment_target  = '9.0'
+    s.dependency 'GStreamer', '1.18.5'
+
 end
