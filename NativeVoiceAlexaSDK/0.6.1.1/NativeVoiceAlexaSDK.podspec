@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
     s.swift_version = "4.2"
     s.ios.deployment_target  = '9.0'
 
-    s.dependency 'AvsDeviceSDK', '~> 0.6.0.8'
+    s.dependency 'AvsDeviceSDK', '~> 1.26.0.1'
     s.dependency 'GStreamer',    '~> 1.18.5'
 end
