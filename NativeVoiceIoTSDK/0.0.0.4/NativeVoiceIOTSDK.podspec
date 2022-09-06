@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-    s.name         = "NativeVoiceIOTSDK"
+    s.name         = "NativeVoiceIoTSDK"
     s.version      = "0.0.0.4"
     s.summary      = "NativeVoice software development kit"
     s.description  = <<-DESC
-    An extended description of NativeVoiceIOTSDK project.
+    An extended description of NativeVoiceIoTSDK project.
     DESC
     s.homepage     = "http://www.nativevoice.ai"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
                   LICENSE
                 }
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/NativeVoiceIOTSDK/0.0.0.4/NativeVoiceIOTSDK.xcframework.zip" }
-    s.vendored_frameworks = "NativeVoiceIOTSDK.xcframework"
+    s.source       = { :http => "https://nativevoiceai.jfrog.io/artifactory/CocoaPods/ai/nativevoice/NativeVoiceIoTSDK/0.0.0.4/NativeVoiceIoTSDK.xcframework.zip" }
+    s.vendored_frameworks = "NativeVoiceIoTSDK.xcframework"
     s.platform = :ios
     s.swift_version = '5.0'
     s.ios.deployment_target  = '13.6'
