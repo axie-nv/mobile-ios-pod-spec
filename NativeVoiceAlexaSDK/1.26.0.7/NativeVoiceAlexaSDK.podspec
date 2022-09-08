@@ -2,7 +2,6 @@ Pod::Spec.new do |s|
     s.name         = "NativeVoiceAlexaSDK"
     s.version      = "1.26.0.7"
     s.summary      = "NativeVoice software development kit"
-    s.swift_versions = '4.0'
     s.description  = <<-DESC
     An extended description of NativeVoiceAlexaSDK project.
     DESC
@@ -17,6 +16,7 @@ Pod::Spec.new do |s|
     s.vendored_frameworks   = "NativeVoiceAlexaSDK.xcframework"
     s.platform              = :ios
     s.ios.deployment_target = '13.6'
+    s.swift_version         = '5.0'
     s.static_framework      = true
 
     s.dependency 'AvsDeviceSDK'
