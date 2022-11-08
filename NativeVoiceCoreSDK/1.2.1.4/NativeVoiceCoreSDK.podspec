@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     s.frameworks = 'Accelerate', 'AssetsLibrary', 'VideoToolbox', 'CoreLocation'
     s.libraries = 'resolv', 'iconv', 'c++'
     
-    s.dependency 'NativeVoiceAlexaSDK', '~> 1.26.3.0'
+    s.dependency 'NativeVoiceAlexaSDK', '~> 1.26.5.0'
     s.dependency 'CocoaLumberjack/Swift'
     s.dependency 'SwiftLint'
     s.dependency 'SwiftProtobuf'
